@@ -1,3 +1,4 @@
+/*Main swagger of site*/
 body{
     font-family: "Naughty Monster";
     padding: 3em;
@@ -7,20 +8,6 @@ section {
     z-index: 1;
     position: relative;
 }
-
-.sticky-content{
-    position: sticky;
-    position: -webkit-sticky;
-    width: 100%;
-    top: 33.3%;
-    text-align-all: right;
-}
-
-.sticky-content p{
-    color: antiquewhite;
-}
-
-
 
 h1 {
     font-size: 46pt;
@@ -33,6 +20,37 @@ h1 {
 
 p{ font-size: 1.5em; }
 
+/*Section style*/
+
+.sticky-message{
+    position: relative
+}
+.sticky-content{
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 33.3%;
+    margin-left: 90vw;
+    justify-content: right;
+    float: right;
+    right:0;
+    margin-left: auto;
+}
+
+.sticky-content h1{
+    position: absolute;
+    right: 10vw;
+}
+
+.sticky-content p{
+    position: absolute;
+    right: 10vw;
+    margin-top: 100px;
+    color: antiquewhite;
+}
+
+
+
 .parallax-background{
     background-image: url('../img/background.png');
     background-size: cover;
@@ -43,7 +61,8 @@ p{ font-size: 1.5em; }
     width: 100%;
     height: 200vh;
     z-index: 0;
-    
+
+
     /*animation-name: animate;*/
     /*animation-direction: normal;*/
     /*animation-duration: 60s;*/
