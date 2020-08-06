@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ën">
+<head>
+    <meta charset="UTF-8">
+    <title>From Offline to Online</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="js/parallax.js"></script>
+</head>
+<body>
+    <div class="parallax-background" id="parallax-background">
+
+    </div>
+    <section class="sticky-message" id="sticky1">
+        <div class="sticky-content">
+            <h1> Message 1</h1>
+            <p> Start it like this...</p>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky2">
+        <div class="sticky-content">
+            <h1> Message 2</h1>
+            <p> Start it like this...</p>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky3">
+        <div class="sticky-content">
+            <h1> Message 3</h1>
+            <p> Start it like this...</p>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky4">
+        <div class="sticky-content">
+            <h1> Message 4</h1>
+            <p> Start it like this...</p>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky5">
+        <div class="sticky-content">
+            <h1> Message 5</h1>
+            <p> Start it like this...</p>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/sticky.js"></script>
+    <script src="js/parallax.js"></script>
+
+    <script type="text/javascript">
+        enterView({
+            selector: 'section',
+            enter: function(el) {
+                el.classList.add('entered');
+            }
+        })
+    </script>
+
+
+</body>
+</html>
