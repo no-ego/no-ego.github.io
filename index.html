@@ -7,13 +7,17 @@
     <script src="js/parallax.js"></script>
 </head>
 <body>
-    <div class="parallax-background" id="parallax-background">
+    <div class="parallax-background" id="parallax-background"></div>
+    <div class="light-switch-button" onclick="toggleLightMode()"> Toggle 'Light Mode'</div>
+    <div class="dark-switch-button" onclick="toggleLightMode()"> Toggle 'Dark Mode'</div>
 
-    </div>
+
     <section class="sticky-message" id="sticky1">
         <div class="sticky-content">
             <h1> Message 1</h1>
             <p> Start it like this...</p>
+            <button onclick="toggleLightMode()">Toggle light mode</button>
+            </div>
         </div>
     </section>
     <section class="sticky-message" id="sticky2">
@@ -51,6 +55,13 @@
                 el.classList.add('entered');
             }
         })
+    </script>
+
+    <script type="text/javascript">
+        function toggleLightMode() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+        }
     </script>
 
 
