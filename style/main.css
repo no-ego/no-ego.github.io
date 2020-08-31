@@ -214,10 +214,119 @@ p{ font-size: 1.5em; }
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+/*Price options*/
+.options {
+    box-sizing: border-box;
+    justify-content: right;
+    margin-left: 222px;
+    z-index: 7;
+}
 
+/* Create three columns of equal width */
+.option {
+    float: left;
+    width: 30%;
+    padding: 11px;
+}
+
+/*.option:hover {*/
+/*    box-shadow: 0 8px 12px 0 rgba(255,255,255,0.7);*/
+/*}*/
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    padding: 0;
+    margin-top: 60px;
+    -webkit-transition: 0.3s;
+    transition: 0.5s;
+}
+
+/* Add shadows on hover */
+.price:hover{
+    box-shadow: 0 8px 12px 0 rgba(255,255,255,0.7);
+    transform: scale(1.01);
+}
+
+/* Pricing header */
+.price .header {
+    background-color: rgba(0,12,12,0.8);
+    color: white;
+    font-size: 24px;
+}
+
+.price .header:hover {
+    background-color: rgba(51,69,71,1);
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    background-color: rgba(255,254,254,0.9);
+    padding: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.price li:hover {
+    background-color: rgba(255,254,254,1);
+}
+
+/* Blue list item */
+.price .price-notion {
+    background-color: rgba(109,247,228,0.9);
+    font-size: 20px;
+}
+
+.price .price-notion:hover{
+    background-color: rgba(109,247,228,1);
+    font-size: 21px;
+}
+
+    /* The "Let's connect" button */
+.button {
+    background-color: rgba(62,139,148,0.9);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 9;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: rgba(79, 178, 189, 1);
+    color: rgba(255, 244, 244, 1);
+    transform: scale(0.9,0.9);
+
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
 
 
 /*Animations*/
+/*preload images:*/
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../img/Background-2 dark mode.jpg') url('../img/Background-3 dark mode.jpg') url('../img/Background-4 dark mode.jpg') url('../img/background-5 dark-mode.jpg') url('../img/background-6 dark mode.jpg') url('../img/background-7 dark mode.jpg');
+}
+
+body.light-mode::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../img/Background-2.jpg') url('../img/Background-3.jpg') url('../img/Background-4.jpg') url('../img/background-5.jpg') url('../img/background-6.jpg') url('../img/background-7.jpg');
+}
 
 @keyframes animate {
 
@@ -236,13 +345,6 @@ p{ font-size: 1.5em; }
     90%{background-image: url("../img/background-7.jpg");}
     100%{background-image: url("../img/background-7.jpg");}
 
-
-    /*15%{background-image: url("../img/Background-2.jpg");}*/
-    /*30%{background-image: url("../img/Background-3.jpg");}*/
-    /*45%{background-image: url("../img/Background-4.jpg");}*/
-    /*60%{background-image: url("../img/background-5.jpg");}*/
-    /*80%{background-image: url("../img/background-6.jpg");}*/
-    /*100%{background-image: url("../img/background-7.jpg");}*/
     
 }
 
