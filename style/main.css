@@ -191,14 +191,14 @@ p{ font-size: 1.5em; }
     z-index: 0;
 
 
-    animation-name: animate;
+    /* animation-name: animate;
     animation-delay: 2s;
     animation-direction: alternate;
     animation-duration: 120s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; */
 
 }
 
@@ -435,7 +435,7 @@ body.light-mode::after{
     content:url('../img/Background-2.jpg') url('../img/Background-3.jpg') url('../img/Background-4.jpg') url('../img/background-5.jpg') url('../img/background-6.jpg') url('../img/background-7.jpg');
 } */
 
-@keyframes animate {
+/* @keyframes animate {
 
     0%{background-image: url("../img/Background-1.jpg");}
     18%{background-image: url("../img/Background-1.jpg");}
@@ -472,7 +472,7 @@ body.light-mode::after{
     90%{background-image: url("../img/background-7 dark mode.jpg");}
     100%{background-image: url("../img/background-7 dark mode.jpg");}
 
-}
+} */
 
 
 /* ----------------------------------------------
