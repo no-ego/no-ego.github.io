@@ -424,7 +424,7 @@ footer a:hover {
 
 
 /*Animations*/
-/*preload images:*/
+/* preload images:
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content:url('../img/Background-2 dark mode.jpg') url('../img/Background-3 dark mode.jpg') url('../img/Background-4 dark mode.jpg') url('../img/background-5 dark-mode.jpg') url('../img/background-6 dark mode.jpg') url('../img/background-7 dark mode.jpg');
@@ -433,7 +433,7 @@ body::after{
 body.light-mode::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
     content:url('../img/Background-2.jpg') url('../img/Background-3.jpg') url('../img/Background-4.jpg') url('../img/background-5.jpg') url('../img/background-6.jpg') url('../img/background-7.jpg');
-}
+} */
 
 @keyframes animate {
 
