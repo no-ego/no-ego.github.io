@@ -1,0 +1,517 @@
+/*Main swagger of site*/
+html{width: 100vw}
+
+body{
+    height: 100%;
+    min-height: 100%;
+    font-family: "comfortaa";
+    padding: 3em -3em 0 3em;
+}
+
+section {
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    font-size: 36pt;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 44pt;
+    background-color: rgba(255,254,254, 0.8);
+    display: inline-block;
+    padding: 25px 15px;
+    border-radius: 7px;
+    margin: auto;
+}
+
+p{ font-size: 1.5em; }
+
+/*Section style*/
+
+.sticky-message{
+    position: relative
+}
+.sticky-content{
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 33.3%;
+
+    margin-left: 90vw;
+    justify-content: right;
+    float: right;
+    right:0;
+    margin-left: auto;
+
+}
+
+
+
+.sticky-content h1{
+    position: absolute;
+    right: 5vw;
+    justify-content: right;
+    text-align: right;
+    margin-bottom: 120px;
+}
+
+.sticky-content h2{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    justify-content: center;
+}
+
+.sticky-content p{
+    padding-top: 20px;
+    float: right;
+    background-color: rgba(0,0,0, 0.6);
+    border-radius: 7px;
+    margin-right: 88px;
+    width: 60vw;
+    margin-top: 100px;
+    color: #fcfcfc;
+}
+
+.scroll-down{
+    position: relative;
+    float: right;
+    margin-right: 25%;
+
+}
+
+.scroll-down img{
+    width: 500px;
+    animation-name: appear;
+    animation-duration:5s;
+    animation-delay: 2s;
+}
+
+@keyframes appear {
+    /*Going to look for a css reveal animation*/
+    0%{size: 0px;}
+    20%{size: 0px;}
+    60%{width: 500px; display:none}
+    80%{}
+
+}
+
+
+.parallax-background{
+    background-image: url('../img/background dark.jpg');
+    background-size: cover;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 200vh;
+    z-index: 0;
+
+
+    animation-name: dark-animate;
+    animation-delay: 10s;
+    animation-direction: alternate;
+    animation-duration: 120s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.light-switch-button{
+    position: fixed;
+    top: 15px;
+    margin: 15px;
+    border-spacing: 15px 50px;
+    background-color:  rgba(255,255,255,0.15);
+    color: whitesmoke;
+    border-radius: 7px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 5;
+    border: 3px solid rgba(255, 244, 244, .9);
+    transition: 0.6s;
+}
+
+.light-switch-button:hover{
+    background-color: rgba(255, 244, 244, .9);
+    color: #4a4e52;
+    transform: scale(0.9,0.9);
+
+}
+
+.dark-switch-button{
+    display: none;
+    z-index: -2;
+}
+
+.referral-button{
+    margin-top: 10%;
+    margin-left: 44%;
+    border-spacing: 15px 50px;
+    background-color:  rgba(98, 30, 150, .69);
+    color: whitesmoke;
+    border-radius: 7px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 5;
+    border: 3px solid rgba(255, 244, 244, .9);
+    transition: 0.6s;
+}
+
+.referral-button:hover {
+    background-color: rgba(255, 244, 244, .99);
+    font-weight: bolder;
+    color: #4a4e52;
+    transform: scale(0.95, 0.95);
+}
+
+
+/*Light mode style*/
+.light-mode .parallax-background{
+    background-image: url('../img/background light.jpg');
+    background-size: cover;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 200vh;
+    z-index: 0;
+
+
+    /* animation-name: animate;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-duration: 120s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out; */
+
+}
+
+.light-mode .sticky-content h1{
+    right: 10vw;
+}
+
+.light-mode .sticky-content p{
+    right: 10vw;
+    margin-top: 100px;
+    background-color: rgba(255,245,254, 0.7);
+    border-radius: 7px;
+    color: darkcyan;
+}
+
+.light-mode h1 {
+    font-size: 36pt;
+    background: rgba(250,250,250, 0.8);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+.light-mode .light-switch-button {
+    display: none;
+    z-index: -2;
+}
+
+.light-mode .dark-switch-button{
+    position: fixed;
+    top: 15px;
+    margin: 15px;
+    border-spacing: 15px 50px;
+    background-color: rgba(255,255,255,0.3);
+    color: rgba(74,78,82,0.8);
+    border-radius: 7px;
+    border: 3px solid rgba(74,78,82,0.8);
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 5;
+    transition: 0.6s;
+}
+
+.dark-switch-button:hover{
+    background-color: rgba(98, 30, 150, .9);
+    color: whitesmoke;
+    transform: scale(0.9,0.9);
+}
+
+
+/*Sticky note style*/
+#sticky1 {
+    height: 1600px;
+}
+
+#sticky2{
+    height: 1400px;
+}
+
+#sticky3{
+    height: 1400px;
+}
+
+#sticky4{
+    height: 1400px;
+}
+
+#sticky5{
+    height: 1111px;
+}
+
+.pricing{
+    top: 11.1%;
+}
+
+#sticky-referral {
+    align-content: center;
+    height: 600px;
+}
+
+
+.entered{
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/*Price options*/
+.options {
+    box-sizing: border-box;
+    justify-content: right;
+    margin-left: 222px;
+    z-index: 7;
+}
+
+/* Create three columns of equal width */
+.option {
+    float: left;
+    width: 30%;
+    padding: 11px;
+}
+
+/*.option:hover {*/
+/*    box-shadow: 0 8px 12px 0 rgba(255,255,255,0.7);*/
+/*}*/
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    padding: 0;
+    margin-top: 60px;
+    -webkit-transition: 0.3s;
+    transition: 0.5s;
+}
+
+/* Add shadows on hover */
+.price:hover{
+    box-shadow: 0 8px 12px 0 rgba(255,255,255,0.7);
+    transform: scale(1.05);
+}
+
+/* Pricing header */
+.price .header {
+    background-color: rgba(0,12,12,0.8);
+    color: white;
+    font-size: 24px;
+}
+
+.price .header:hover {
+    background-color: rgba(51,69,71,1);
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    background-color: rgba(255,254,254,0.9);
+    padding: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.price li:hover {
+    background-color: rgba(255,254,254,1);
+}
+
+/* Blue list item */
+.price .price-notion {
+    background-color: rgba(109,247,228,0.9);
+    font-size: 20px;
+}
+
+.price .price-notion:hover{
+    background-color: rgba(109,247,228,1);
+    font-size: 21px;
+}
+
+    /* The "Let's connect" button */
+.button {
+    background-color: rgba(62,139,148,0.9);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 9;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: rgba(79, 178, 189, 1);
+    color: rgba(255, 244, 244, 1);
+    transform: scale(0.9,0.9);
+
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+/*Footer*/
+footer {
+    clear: both;
+    position: relative;
+    background-color: rgba(16,16,16,0.6);
+    color: #fcfcfc;
+    margin: -2px -3.1em 0 -3em;
+    height: 20px;
+    width: 100vw;
+    z-index: 10;
+}
+
+footer a {
+    color: rgba(79, 178, 189, 0.8);
+}
+
+footer a:hover {
+    color: rgba(79, 178, 189, 1);
+}
+
+.footer-left{
+    width: 50%;
+    float: left;
+}
+
+.footer-right{
+    width: 50%;
+    float: left;
+}
+
+
+/*Animations*/
+/* preload images:
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../img/Background-2 dark mode.jpg') url('../img/Background-3 dark mode.jpg') url('../img/Background-4 dark mode.jpg') url('../img/background-5 dark-mode.jpg') url('../img/background-6 dark mode.jpg') url('../img/background-7 dark mode.jpg');
+}
+
+body.light-mode::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../img/Background-2.jpg') url('../img/Background-3.jpg') url('../img/Background-4.jpg') url('../img/background-5.jpg') url('../img/background-6.jpg') url('../img/background-7.jpg');
+} */
+
+/* @keyframes animate {
+
+    0%{background-image: url("../img/Background-1.jpg");}
+    18%{background-image: url("../img/Background-1.jpg");}
+    20%{background-image: url("../img/Background-2.jpg");}
+    37%{background-image: url("../img/Background-2.jpg");}
+    39%{background-image: url("../img/Background-3.jpg");}
+    51%{background-image: url("../img/Background-3.jpg");}
+    53%{background-image: url("../img/Background-4.jpg");}
+    66%{background-image: url("../img/Background-4.jpg");}
+    69%{background-image: url("../img/background-5.jpg");}
+    77%{background-image: url("../img/background-5.jpg");}
+    79%{background-image: url("../img/background-6.jpg");}
+    88%{background-image: url("../img/background-6.jpg");}
+    90%{background-image: url("../img/background-7.jpg");}
+    100%{background-image: url("../img/background-7.jpg");}
+
+    
+}
+
+@keyframes dark-animate {
+
+    0%{background-image: url("../img/Background-1 dark mode.png.jpg");}
+    18%{background-image: url("../img/Background-1 dark mode.png.jpg");}
+    20%{background-image: url("../img/Background-2 dark mode.jpg");}
+    37%{background-image: url("../img/Background-2 dark mode.jpg");}
+    39%{background-image: url("../img/Background-3 dark mode.jpg");}
+    51%{background-image: url("../img/Background-3 dark mode.jpg");}
+    53%{background-image: url("../img/Background-4 dark mode.jpg");}
+    66%{background-image: url("../img/Background-4 dark mode.jpg ");}
+    69%{background-image: url("../img/background-5 dark-mode.jpg");}
+    77%{background-image: url("../img/background-5 dark-mode.jpg");}
+    79%{background-image: url("../img/background-6 dark mode.jpg");}
+    88%{background-image: url("../img/background-6 dark mode.jpg");}
+    90%{background-image: url("../img/background-7 dark mode.jpg");}
+    100%{background-image: url("../img/background-7 dark mode.jpg");}
+
+} */
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-7-28 10:0:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
