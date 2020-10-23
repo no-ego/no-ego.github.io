@@ -11,6 +11,7 @@ html{width: 100vw}
 
     .scroll-down{display: none}
 
+
 }
 
 @media (min-width: 601px){
@@ -97,6 +98,15 @@ p{ font-size: 1.5em; }
     color: #fcfcfc;
 }
 
+@media (max-width: 600px){
+    .sticky-content p{
+        margin-top: 200px;
+    }
+
+    .referral-button{
+        margin-top: 150px;
+    }
+}
 
 
 .scroll-down{
