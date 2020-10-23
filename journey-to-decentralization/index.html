@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ën">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154677780-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154677780-2');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>From Offline to Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Your Journey to Decentralization">
+
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="../js/parallax.js"></script>
+</head>
+<body>
+    <div class="parallax-background" id="parallax-background"></div>
+    <div class="light-switch-button" onclick="toggleLightMode()"> Toggle 'Light Mode'</div>
+    <div class="dark-switch-button" onclick="toggleLightMode()"> Toggle 'Dark Mode'</div>
+
+
+    <section class="sticky-message" id="sticky1">
+        <div class="sticky-content">
+            <h1> Hi Lovely Team Member,</h1>
+            <br>
+            <p> Before we have our meeting next monday I want to invite you to do some preparation. This site is going to take you through that in a really fun way...</p>
+            <div class="scroll-down">
+                <img src="../img/scroll-down%20white.png">
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky2">
+        <div class="sticky-content">
+            <h1> First, let's take a deep breath and relax into our chair</h1>
+            <p> Let's be grateful for the week we leave behind us and settle into the current moment</p>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky3">
+        <div class="sticky-content">
+            <h1> Good, now we are settled to get some preperation work going</h1>
+            <p>  It's only going to take a couple minutes, but it is essential we do this before the meeting this Monday</p>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky4">
+        <div class="sticky-content">
+            <h1> Here, we will reflect on what decentralization means for you. What does it take to be decentralized?</h1>
+            <br>
+            <br>
+            <p> For this, you can watch this little video, after that there is a small survey that will go through a series of questions</p>
+        </div>
+    </section>
+    <section class="sticky-message" id="sticky5" >
+        <center>
+            <video width="90%" preload controls>
+                <source src="vid/decentral.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </center>
+    </section>
+<!--    <section class="sticky-message" id="sticky5">-->
+<!--        <div class="sticky-content pricing">-->
+<!--            <h1> So let's connect! Here are the different ways I can help you!</h1>-->
+<!--            <br>-->
+<!--            <div class="options">-->
+<!--                <div class="option">-->
+<!--                    <ul class="price">-->
+<!--                        <li class="header">Let's meet</li>-->
+<!--                        <li class="price-notion">Free</li>-->
+<!--                        <li>20 minute call</li>-->
+<!--                        <li>Get to know each other, seeing if we are a good fit</li>-->
+<!--                        <li>I will give you an immediate next step you can take today to grow your online presence</li>-->
+<!--                        <li>Option to explore customized plans, personalized for your needs</li>-->
+<!--                        <li class="submit"><a href="https://calendly.com/philly-g/diving-into-the-online-world-session" class="button">Plan call here!</a> </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="option">-->
+<!--                    <ul class="price">-->
+<!--                        <li class="header" style="background-color: rgba(9,184,182,0.95)">Kickstart Consultation</li>-->
+<!--                        <li class="price-notion">€149,-</li>-->
+<!--                        <li>2hours+ consulting session</li>-->
+<!--                        <li>Completely remove your stuck-ness, knowing your work also belongs in the online space</li>-->
+<!--                        <li>Walk away with a complete personalized strategy for your online presence</li>-->
+<!--                        <li>Especially created for people who are serving the world with their spiritual practices</li>-->
+<!--                        <li class="submit"><a href="#" class="button">Yes I want to grow!</a> </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="option">-->
+<!--                    <ul class="price">-->
+<!--                        <li class="header">Month of Digital Transformation</li>-->
+<!--                        <li class="price-notion">€449,-</li>-->
+<!--                        <li>4 consultation sessions</li>-->
+<!--                        <li>Every week clear and fun action steps to get you rolling in the online world</li>-->
+<!--                        <li>Transferring your existing client base to the online space effortlessly </li>-->
+<!--                        <li>Explore different ways of interacting with clients so that you triple your income</li>-->
+<!--                        <li>Especially created for people who are serving the world with their spiritual practices</li>-->
+<!--                        <li class="submit"><a href="#" class="button">Yes, I'm all in!</a> </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+<!--        </div>-->
+</section>
+<section class="sticky-message" id="sticky-referral">
+        <div class="sticky-content referral-section">
+            <div class="referrals">
+                <h2>Awesome, now here are some questions...</h2>
+                <div class="referral-button" href="#"> Go to the form here <3</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-left">
+            Copyright ©2020 From offline 2 online, All rights reserved.
+        </div>
+       <div class="footer-right">
+           Design and initiative by <a href="no-ego.be">Phil Geelhoed, No Ego</a>
+       </div>
+    </footer>
+
+    <script type="text/javascript" src="js/sticky.js"></script>
+    <script src="../js/parallax.js"></script>
+
+    <script type="text/javascript">
+        enterView({
+            selector: 'section',
+            enter: function(el) {
+                el.classList.add('entered');
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+        function toggleLightMode() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+        }
+    </script>
+
+
+</body>
+</html>
