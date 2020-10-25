@@ -1,6 +1,11 @@
 /*Main swagger of site*/
 html{width: 100vw}
 
+@font-face{
+    font-family: "comfortaa";
+    src: url(Comfortaa-Regular.ttf);
+}
+
 @media (max-width: 600px){
     body{
         zoom: 0.5;
