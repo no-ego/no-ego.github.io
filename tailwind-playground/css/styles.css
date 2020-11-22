@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+
+.header {
+    height: auto;
+}
+
+.header nav {
+    background-color: rgba(0,0,0,0.3),
+}
+
+.video-cta {
+    height: auto;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        height: 762px;
+    }
+
+    .video-cta {
+        height: 582px;
+    }
+}
+
+.btn-primary {
+    @apply bg-brand hover:bg-slightblack text-white px-10 py-3 my-2 inline-block;
+}
+
+@tailwind utilities;
