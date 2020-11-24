@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dist.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/cc?family=Barlow:400, 700 | Poppins:300,400 | Lato:400,700,900 | Bebas Neue:300,400&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+    <title>TF Template in Tailwind 2.0</title>
+    <meta name="description" content="This is the template version 1 - fully made in Tailwind 2.0. Making some good old tailwind components for Threefold">
+
+</head>
+<body>
+
+    <header>
+        <nav class="flex flex-wrap items-center justify-between p-4"><div class="flex flex-shrink-0 mr-10"><a class="text-xl text-indigo-600 font-semibold font-heading" href="#"><img src="./images/TFwithBlack.png" alt="TF Loge" width="200"></a></div>
+            <div class="block lg:hidden">
+              <button class="navbar-burger flex items-center py-2 px-3 text-threefold-green rounded border border-threefold-green">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></button>
+            </div>
+            <div class="navbar-menu hidden lg:flex lg:flex-grow lg:items-end text-right w-full lg:w-auto">
+              <div class="lg:ml-auto lg:mr-32 lg:items-end">
+                  <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-threefold-green uppercase font-bold" href="#">About</a>
+                  <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-threefold-green uppercase font-bold" href="#">Partners</a>
+                  <a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-gray-900 hover:text-threefold-green uppercase font-bold" href="#">News</a>
+                  <a class="block lg:inline-block mt-4 lg:mt-0 text-gray-900 hover:text-threefold-green uppercase font-bold" href="#">Events</a>
+                </div>
+              <div><a class="block lg:inline-block mt-4 lg:mt-0 lg:mr-8 text-blue-900 hover:text-threefold-green" href="#">Sign in</a><a class="" href="#">Sign up</a></div>
+            </div>
+          </nav>
+    </header>
+
+
+    <!---This is the homepage card with Link-->
+    <div class="min-h-screen bg-white pt-6 flex flex-col justify-center py-1">
+
+
+        <section class="my-5 pt-10">
+            <div class="flex mx-32">
+                <div class="flex-1 mx-auto mr-24 py-10 my-auto justify-items-end max-w-2xl text-right">
+                    <h1 class="uppercase font-tf-secondary font-semibold text-6xl text-gray-700">Be The Internet</h1>
+                    <p class="mt-6 mb-8 text-gray-400 leading-relaxed font-tf-primary text-lg">Centralized storage and Compute <br> owned by everyone, everywhere.</p>
+                </div>
+                <div class="flex-1">
+                    <img src="./images/TFglobe.JPG" alt="globe" class="max-w-2xl">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-0  my-10 px-0 mx-36 shadow-xl bg-white ">
+            <div class="flex flex-wrap items-center -mx-8">
+              <div class="lg:w-1/3 pl-8 mb-8 lg:mb-0"><img src="./images/D6 (2).png" alt="Nature man" class="max-w-md"></div>
+              <div class="lg:w-2/3 px-20 text-left">
+                <h2 class="text-4xl font-semibold font-tf-secondary">HOW IT WORKS</h2>
+                <p class="mt-6 mb-8 text-gray-400 leading-relaxed">The Threefold Grid and decentralized capacity <br> can benifit everyone on the planet.</p>
+                <div class="flex ml-52 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    <a  href="#">
+                        <svg  class="fill-current text-threefold-green hover:text-green-600 h-11 w-11 " data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.04 315.72"><title>Arrows</title><path class="cls-1" d="M46.17,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L274.84,244.54a14.64,14.64,0,0,1,3.74,11,14.24,14.24,0,0,1-3.74,8.19L149.26,402.36a17.41,17.41,0,0,1-19.78,9.14l-83.7.5c-.48-.14-8.05-2.47-10.24-10.14a15.37,15.37,0,0,1,2.22-12.61L159,254.1,36.28,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,46.17,96.56Z" transform="translate(-35 -96.28)"/><path class="cls-1" d="M232.57,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L461.24,244.54a14.69,14.69,0,0,1,3.73,11,14.25,14.25,0,0,1-3.73,8.19L335.65,402.36a17.39,17.39,0,0,1-19.77,9.14l-83.71.5c-.47-.14-8-2.47-10.23-10.14a15.37,15.37,0,0,1,2.22-12.61L345.39,254.1,222.68,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,232.57,96.56Z" transform="translate(-35 -96.28)"/></svg>
+                    </a><a class="inline-block text-green-600 hover:underline py-2 ml-6 uppercase text-right font-bold" href="#">Learn more about the Threefold Grid</a>
+                </div>
+                
+              </div>
+            </div>
+          </section>  
+           
+
+          
+  
+
+
+        <!---This is the homepage card with Link-->
+        
+
+            <section class="py-0  my-10 px-0 mx-36 shadow-xl bg-white ">
+                <div class="flex flex-wrap items-center -mx-8">
+                  <div class="lg:w-1/3 pl-8 mb-8 lg:mb-0"><img src="./images/ZQTF013 - Deployed Apps .png" alt="Deployed Apps"   class="max-w-md"></div>
+                  <div class="lg:w-2/3 px-20 text-left">
+                    <h2 class="text-4xl font-semibold font-tf-secondary uppercase">We are live</h2>
+                    <p class="mt-6 mb-8 text-gray-400 leading-relaxed">Via the Threefold Marketplace, everyone can now <br> utilize the largest decentralized capacity on the planet/p>
+                    <div class="flex ml-52 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <a  href="#">
+                            <svg  class="fill-current text-threefold-green hover:text-green-600 h-11 w-11 " data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.04 315.72"><title>Arrows</title><path class="cls-1" d="M46.17,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L274.84,244.54a14.64,14.64,0,0,1,3.74,11,14.24,14.24,0,0,1-3.74,8.19L149.26,402.36a17.41,17.41,0,0,1-19.78,9.14l-83.7.5c-.48-.14-8.05-2.47-10.24-10.14a15.37,15.37,0,0,1,2.22-12.61L159,254.1,36.28,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,46.17,96.56Z" transform="translate(-35 -96.28)"/><path class="cls-1" d="M232.57,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L461.24,244.54a14.69,14.69,0,0,1,3.73,11,14.25,14.25,0,0,1-3.73,8.19L335.65,402.36a17.39,17.39,0,0,1-19.77,9.14l-83.71.5c-.47-.14-8-2.47-10.23-10.14a15.37,15.37,0,0,1,2.22-12.61L345.39,254.1,222.68,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,232.57,96.56Z" transform="translate(-35 -96.28)"/></svg>
+                        </a><a class="inline-block text-green-600 hover:underline py-2 ml-6 uppercase text-right font-bold" href="#">Learn more about the Threefold Grid</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </section>  
+               
+    
+              
+      
+
+        
+
+
+            <!---This is the homepage card with Link-->
+    
+
+        <section class="py-0  my-10 px-0 mx-36 shadow-xl bg-white ">
+            <div class="flex flex-wrap items-center -mx-8">
+              <div class="lg:w-1/3 pl-8 mb-8 lg:mb-0"><img src="./images/ZQTF105 - 3Node White.png" alt="3node white"  class="max-w-md"></div>
+              <div class="lg:w-2/3 px-20 text-left">
+                <h2 class="text-4xl font-semibold font-tf-secondary uppercase">Participate & earn</h2>
+                <p class="mt-6 mb-8 text-gray-400 leading-relaxed">Provide capacity. Help the planet. Earn</p>
+                <div class="flex ml-52 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    <a  href="#">
+                        <svg  class="fill-current text-threefold-green hover:text-green-600 h-11 w-11 " data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.04 315.72"><title>Arrows</title><path class="cls-1" d="M46.17,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L274.84,244.54a14.64,14.64,0,0,1,3.74,11,14.24,14.24,0,0,1-3.74,8.19L149.26,402.36a17.41,17.41,0,0,1-19.78,9.14l-83.7.5c-.48-.14-8.05-2.47-10.24-10.14a15.37,15.37,0,0,1,2.22-12.61L159,254.1,36.28,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,46.17,96.56Z" transform="translate(-35 -96.28)"/><path class="cls-1" d="M232.57,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L461.24,244.54a14.69,14.69,0,0,1,3.73,11,14.25,14.25,0,0,1-3.73,8.19L335.65,402.36a17.39,17.39,0,0,1-19.77,9.14l-83.71.5c-.47-.14-8-2.47-10.23-10.14a15.37,15.37,0,0,1,2.22-12.61L345.39,254.1,222.68,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,232.57,96.56Z" transform="translate(-35 -96.28)"/></svg>
+                    </a><a class="inline-block text-green-600 hover:underline py-2 ml-6 uppercase text-right font-bold" href="#">Learn more about the Threefold Grid</a>
+                </div>
+                
+              </div>
+            </div>
+          </section>  
+           
+
+          
+    
+
+
+
+
+        <!---This is the homepage card with Link-->
+      
+
+            <section class="py-0  my-10 px-0 mx-36 shadow-xl bg-white ">
+                <div class="flex flex-wrap items-center -mx-8">
+                  <div class="lg:w-1/3 pl-8 mb-8 lg:mb-0"><img  src="./images/ZQTF300 - Token Swirl.png" alt="Token Swirl" class="max-w-md"></div>
+                  <div class="lg:w-2/3 px-20 text-left">
+                    <h2 class="text-4xl font-semibold font-tf-secondary uppercase">A purpose driven token</h2>
+                    <p class="mt-6 mb-8 text-gray-400 leading-relaxed">TFT is the only way to rent compute storage capacity on the <br> Threefold Grid - which has the potential to gain significant market <br> share in today's public cloud market</p>
+                    <div class="flex ml-52 duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <a  href="#">
+                            <svg  class="fill-current text-threefold-green hover:text-green-600 h-11 w-11 " data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.04 315.72"><title>Arrows</title><path class="cls-1" d="M46.17,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L274.84,244.54a14.64,14.64,0,0,1,3.74,11,14.24,14.24,0,0,1-3.74,8.19L149.26,402.36a17.41,17.41,0,0,1-19.78,9.14l-83.7.5c-.48-.14-8.05-2.47-10.24-10.14a15.37,15.37,0,0,1,2.22-12.61L159,254.1,36.28,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,46.17,96.56Z" transform="translate(-35 -96.28)"/><path class="cls-1" d="M232.57,96.56l84.05,0a18.74,18.74,0,0,1,19.7,9.16L461.24,244.54a14.69,14.69,0,0,1,3.73,11,14.25,14.25,0,0,1-3.73,8.19L335.65,402.36a17.39,17.39,0,0,1-19.77,9.14l-83.71.5c-.47-.14-8-2.47-10.23-10.14a15.37,15.37,0,0,1,2.22-12.61L345.39,254.1,222.68,116.58c-.28-.65-3-7.18.79-13.43A14.9,14.9,0,0,1,232.57,96.56Z" transform="translate(-35 -96.28)"/></svg>
+                        </a><a class="inline-block text-green-600 hover:underline py-2 ml-6 uppercase text-right font-bold" href="#">Learn more about the Threefold Grid</a>
+                    </div>
+                    
+                  </div>
+                </div>
+            </section>  
+               
+    
+              
+        </div>
+    
+
+
+    <footer><div class="flex flex-wrap items-center py-4 px-4 border-b">
+        <div class="w-full lg:w-1/5 text-center lg:text-left"><a class="text-xl text-indigo-600 font-semibold font-heading" href="#"><img src="./images/TFwithout3.png" alt="ThreeFold" width="200"></a></div>
+        <div class="w-full lg:w-3/5 mt-4 lg:mt-0 text-center"><a class="inline-block mx-4 mb-4 lg:mb-0 text-blue-900 hover:text-threefold-green" href="#">Products</a>
+            <a class="inline-block mx-4 mb-4 lg:mb-0 text-gray-900 hover:text-threefold-green" href="#">Team</a>
+            <a class="inline-block mx-4 mb-4 lg:mb-0 text-gray-900 hover:text-threefold-green" href="#">Customers</a>
+            <a class="inline-block mx-4 mb-4 lg:mb-0 text-gray-900 hover:text-threefold-green" href="#">Blog</a></div>
+        <div class="flex justify-center space-x-6 lg:justify-end w-full lg:w-1/5 my-2 lg:my-0">
+          <a href="#">
+            <svg class="text-gray-700 hover:text-threefold-green w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a>
+          <a href="#">
+            <svg class="text-gray-700 hover:text-threefold-green w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg></a>
+          <a href="#">
+            <svg class="text-gray-700 hover:text-threefold-green w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg></a>
+        </div>
+        </div>
+        <div class="py-4 text-center">
+          <span class="block md:inline-block mb-4 md:mb-0 mx-3">© 2020 ThreeFold</span>
+          <a class="inline-block mx-4 text-gray-900 hover:text-threefold-green" href="#">Privacy Policy</a>
+          <a class="inline-block mx-4 text-gray-900 hover:text-threefold-green" href="#">Term of Service</a>
+        </div>
+      </footer>
+      
+</body>
+</html>
