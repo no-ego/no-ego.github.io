@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--main meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Welcome to the website of the Crystal Twin. The place to start your Technological Reset!">
+    <!---Let's use comfortaa as paragraph + something different for titles-->
+
+    <!--Social sharing-->
+    <meta property="og:title" content="Give yourself a Technological Reset">
+    <meta property="og:url" content="https://crystaltwin.me/">
+    <meta property="og:description" content="Welcome to the website of the veda retreats. The place where entrepeneurs meet with spirituality">
+    <meta property="og:image" content="http://example.com/lamb-full.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+
+    <!--Main Config-->
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="./img/dot-sacred.svg"/>
+    <title>Veda retreats preview</title>
+
+    <!--Dark Mode code-->
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('html').classList.add('dark')
+      } else {
+        document.querySelector('html').classList.remove('dark')
+      }
+    </script>
+
+    <!--menu toggle css-->
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+        transition-duration: 300ms;
+      }
+    </style>
+
+</head>
+<body class="overflow-x-hidden w-full">
+    <!--Navigation bar-->
+    <!--TODO: 
+      - Make animation out of one of the designs
+      - Adjust onboarding
+      - install purgecss for production-->
+
+    <header class="relative lg:px-15 px-6 bg-transparent flex flex-wrap items-center lg:py-0 py-2 z-20" >
+      <div class="flex-1 flex flex-shrink-0 justify-between items-center mx-auto">
+
+      </div>
+      <div>
+        <label for="menu-toggle" class="relative cursor-pointer lg:hidden block mr-12">
+          <svg class="fill-current text-white absolute right-0" viewBox="0 0 20 20" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input type="checkbox" class="hidden" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:mx-auto w-full" id="menu">
+          <nav>
+            <ul class="lg:flex items-center  text-lg justify-between text-gray-50 pt-4 lg:pt-0">
+              <li>
+                <a class="lg:p-8 py-3 px-0 block border-b-2 border-transparent dark:hover:border-green-200 hover:border-crystal-cyan text-gray-50 dark:text-gray-200 dark:hover:text-green-200 hover:text-crystal-cyan transition duration-300 " href="#">VISION</a>
+              </li>
+              </li>
+              <li>
+                <a class="inline-block py-1 px-14 mr-6 uppercase font-bold text-gray-50 hover:border-crystal-cyan ring-crystal-gray bg-transparent hover:shadow-lg dark:hover:shadow-lg-white hover:bg-crystal-cyan hover:text-white dark:text-gray-50 dark:hover:bg-green-200 dark:hover:text-gray-600 transition duration-300 text-xl rounded cursor-pointer" href="#get-started">Join Us!</a>
+              </li>
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+      <a href="#">
+        <img src="./img/Veda logo + text.png" alt="Veda logo" width="300" class="dark:inline-block lg:w-1/3 absolute lg:-top-56 -top-10 left-0 right-0 mx-auto  ">
+      </a>
+
+    </header>
+
+    <!--Landing section-->
+    <section class="py-12 px-4 text-center bg-gradient-to-r to-white from-green-400 mx-auto w-full bg-cover z-10 lg:min-h-screen lg:h-screen bg-no-repeat bg-center lg:pb-80 pb-36">
+      <img src="./img/landing boat.png" alt="landing boat" class="z-10 absolute top-0 left-0 w-screen min-w-screen" />
+        <div class="w-full max-w-7xl mx-auto">
+          <img src="./img/landing text.png" alt="intro movie" class="absolute top-0 left-0 w-screen z-10 "> 
+          <div class="lg:h-screen h-52"></div>
+          <div class="z-30 mt-0">
+              <a class="crystal-btn-primary my-4 hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white text-gray-50 md:text-xl " href="#">Learn More</a>
+              <a class="crystal-btn-gradient hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white text-gray-50 my-4 md:text-xl" href="#get-started">Get Started</a>
+          </div>
+        </div>
+    </section>
+
+
+    <!--The Challenge Section-->
+    <section id="challange" class="relative lg:py-32 lg:pb-56 items-center bz-0 bg-gradient-to-r lg:pt-56 pt-36 to-white from-green-400 dark:bg-gray-800">
+      <div class="container mx-auto">
+        <div class=" px-8  my-auto max-w-7xl">
+          <h4 class="uppercase md:text-2xl text-lg py-4 text-green-100 z-10 ">Welcome to veda retreats</h4>
+          <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white text-gray-50 font-gilroy py-4 z-10 ">The place where business meets spirituality</h2>
+          <p class="md:text-2xl text-xl py-4 max-w-4xl text-gray-50 font-comfortaa z-10">Veda offers unique, authentic, and private cruises with organic food, green energy, and a warm-hearted crew.
+
+            There is no other experience like us on the Nile.</p>
+          <p class="md:text-2xl text-xl font-bold py-4 max-w-4xl text-gray-100 font-comfortaa z-10">WE are the creators, storytellers, influencers and builders that make up our online world. So why are we contributing to / participating in a system in which our digital selves aren't in our control? 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--The Solution Section -->
+    <section id="solution" class="relative px-8 md:px-16 py-12 md:py-48 md:pt-56 text-right dark:bg-gray-800">
+      <div class="w-full mx-auto relative lg:pb-56 pb-12 lg:pt-0 pt-72 md:pr-24">
+        <span class="uppercase md:text-2xl text-lg py-4 dark:text=green-200 max-w-2xl z-10 dark:text-green-200">The Solution</span>
+        <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white z-10 py-4 font-gilroy">A digital world with YOU at the center.</h2>
+        <p class="md:text-3xl text-xl py-4 max-w-7xl text-right z-10 dark:text-gray-50 font-comfortaa absolute md:right-24">CrystalTwin is a digital evolution, giving you a single source of authentication and identification across the internet while bringing together your data, files, content and applications in one unified, decentralized place. 
+        </p>
+      </div>
+      <img src="./img/diot-whoosh.svg" alt="dotted wooshes" class="absolute z-0 lg:-left-80 lg:-top-12 -left-24 -top-16 2xl:w-2/3 lg:w-1/2 ">
+    </section>
+
+    <!--Digital self section-->
+    <section class="px-8 md:px-16 py-12 md:pt-56 text-center dark:bg-gray-800">
+      <h3 class="font-extrabold md:text-5xl text-2xl dark:text-white py-6 font-gilroy">Your digital self is:</h3>
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:mx-16 items-center font-gilroy justify-items-center align-middle ">
+         <div class="flex-1 w-1/2 items-center  mx-auto py-8 flex-shrink-0">
+          <img src="./img/Ellipse 1.svg" alt="circle" class="w-20  mx-auto py-4 flex-shrink-0"> 
+          <h4 class="md:text-2xl text-xl font-extrabold mx-auto py-4 max-w-4xl font-gilroy dark:text-gray-50">Intelligent</h4>
+          <p class="md:text-xl text-lg -py-1 max-w-4xl text-center mx-auto font-extralight font-gilroy dark:text-gray-200">Knows your preferences, <br> learns to serve you better</p>
+         </div>   
+         <div class="flex-1 w-1/2 items-center  mx-auto py-8 flex-shrink-0">
+          <img src="./img/Ellipse 2.svg" alt="circle" class="w-20 mx-auto py-4 flex-shrink-0"> 
+          <h4 class="md:text-2xl text-xl font-extrabold py-4 mx-auto max-w-4xl font-gilroy dark:text-gray-50">Capable</h4>
+          <p class="md:text-xl text-lg py-0 max-w-4xl text-center mx-auto font-gilroy dark:text-gray-200">Can carry out many action <br> and tasks that save you time</p>
+         </div>   
+         <div class="flex-1 w-1/2 items-centermx-auto py-8 flex-shrink-0">
+          <img src="./img/Ellipse 3.svg" alt="circle" class="w-20 mx-auto py-4 flex-shrink-0"> 
+          <h4 class="md:text-2xl text-xl font-extrabold py-4 mx-auto max-w-4xl font-gilroy dark:text-gray-50">Protected</h4>
+          <p class="md:text-xl text-lg py-0 max-w-4xl text-center mx-auto font-gilroy dark:text-gray-200">Securely stored on a decentralized <br> cloud that you control</p>
+          </div>   
+         <div class="flex-1 w-1/2 items-center mx-auto py-8 flex-shrink-0">
+          <img src="./img/Ellipse 4.svg" alt="circle" class="w-20 mx-auto py-4 flex-shrink-0"> 
+          <h4 class="md:text-2xl text-xl font-extrabold py-4 mx-auto max-w-4xl font-gilroy dark:text-gray-50">Insightful</h4>
+          <p class="md:text-xl text-lg py-0 max-w-4xl text-center mx-auto font-gilroy dark:text-gray-200">Provides valuable feedback on <br> your online activity and behavior</p>
+         </div>   
+         <div class="flex-1 w-1/2 items-center mx-auto py-8 flex-shrink-0">
+          <img src="./img/Ellipse 5.svg" alt="circle" class="w-20 mx-auto py-4 flex-shrink-0"> 
+          <h4 class="md:text-2xl text-xl font-extrabold py-4 mx-auto max-w-4xl font-gilroy dark:text-gray-50">Connected</h4>
+          <p class="md:text-xl text-lg py-0 max-w-4xl text-center mx-auto font-gilroy dark:text-gray-200">Enables more authentic, human <br> interaction without intermedediaries</p>
+         </div>   
+         <div class="flex-1 w-1/2 items-center mmx-auto py-8 flex-shrink-0">
+          <img src="./img/Ellipse 6.svg" alt="circle" class="w-20 mx-auto py-4 flex-shrink-0"> 
+          <h4 class="md:text-2xl text-xl font-extrabold py-4 mx-auto max-w-4xl font-gilroy dark:text-gray-50">Responsible</h4>
+          <p class="md:text-xl text-lg py-0 max-w-4xl text-center mx-auto font-gilroy dark:text-gray-200">Ethically designed for the highest <br> ggood, not the highest profits</p>
+         </div>   
+  
+      </div>
+      <div class="py-8 mt-10 mx-auto">
+        <a class="crystal-btn-primary my-4 hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white" href="#">Learn More</a>
+        <a class="crystal-btn-gradient hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white text-gray-50 my-4 md:text-xl" href="#">Get Started</a>
+    </div>
+    </section>
+
+    <!--Staircase of information-->
+    <section id="staircase" class="bg-white dark:bg-gray-800 py-12 px-4">
+        <div>
+          <div class="flex flex-wrap items-center my-4 -mx-8 bg-gray-100 dark:bg-gray-900">
+            <div class="md:w-1/2 px-8 mb-8 md:flex-1 md:order-1 w-full "><img class="w-4/5 mx-auto" src="./img/dot-swirl-rev.svg" alt="dot swirl"></div>
+            <div class="md:w-1/2 px-8 md:flex-1 max-w-2xl md:ml-24 py-12 mx-auto md:text-right">
+              <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">Self-Sovereign Identity (SSI) and Universal Authentication</h3>
+              <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">No more filling out countless account profiles and managing dozens of passwords. CrystalTwin is your secure single sign-on for the Internet. </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center my-4 -mx-8  dark:bg-gray-800">
+            <div class="md:w-1/2 px-8 mb-8 w-full"><img class="w-4/5 mx-auto" src="./img/dot-circle.svg" alt="dot purple sun"></div>
+            <div class="md:w-1/2 px-8 max-w-2xl mb-8">
+              <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">Securely Own, Store and Manage Your Content, Files, Data and Documents</h3>
+              <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">Stop storing your stuff in places that others control. CrystalTwin comes with decentralized storage so that you never have to use (or pay for) centralized servers again.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center my-4 -mx-8 bg-gray-100 dark:bg-gray-700">
+            <div class="md:w-1/2 px-8 mb-8 md:flex-1 md:order-1 w-full"><img class="w-4/5 mx-auto" src="./img/dot-wave.svg" alt="dot wave"></div>
+            <div class="md:w-1/2 px-8 max-w-2xl md:flex-1 md:ml-24 md:text-right py-12">
+              <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">Open Source Tools and Experiences Built to Enhance, not Exploit</h3>
+              <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">Apps in the CrystalTwin ecosystem are created with the individual in mind — not some advertiser or corporation — which means less third-party control and oversight, more peer-to-peer interaction, and data that stays yours.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center my-4 -mx-8  dark:bg-gray-800">
+            <div class="md:w-1/2  px-8 mb-8 order-none lg:relative w-full"><img class="w-4/5 mx-auto lg:absolute lg:-left-24 lg:-top-12 lg:w-full" src="./img/dot-wave-blue.svg" alt="dot wave"></div>
+            <div class="md:w-1/2  max-w-2xl px-8 py-12 ">
+              <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">A Dashboard to Illuminate Your Digital Life</h3>
+              <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">See your data, network, preferences and content at a glance. Your CrystalTwin monitors and displays your digital activity and information in real-time, giving you key insights and recommendations for an optimized online experience.</p>
+            </div>
+          </div>
+        </div>
+      
+
+    </section>
+    <!--powered by section-->
+    <section class="md:py-16 py-4 md:pt-40 md:pl-40 md:px-16 dark:bg-gray-800"> 
+      <div class="md:flex md:flex-wrap container">
+        <div class=" px-8 md:pl-24 my-auto max-w-4xl 2xl:max-w-full">
+          <h4 class="uppercase md:text-2xl text-lg py-4 dark:text-green-200 z-10 ">Powered By</h4>
+          <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white font-gilroy py-4 z-10 ">The Threefold Network</h2>
+          <p class="md:text-2xl text-xl py-4 max-w-4xl text-gray-500 dark:text-gray-200 font-comfortaa z-10">The Internet is a product of the people, not the other way around. Protocol.me gives each person the ability to customize the way apps, programs, companies and individuals interact with their data, content and other information, empowering them to take control of their identity and security online and preventing unauthorized use or access from unknown entities.
+          </p>
+        </div>
+        <div class="md:order-1 flex-1"><img src="./img/swirl.png" alt="Threefold swirl" class="md:ml-20 mx-auto md:px-0 px-8 w-full"></div>
+      </div>
+       <a class="crystal-btn-primary my-4 hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white md:text-xl md:ml-24 ml-8" href="https://www.threefold.io/">Learn More</a>
+    </section>
+    <!--Get started section-->
+    <!--TODO: make embedded iframe of this-->
+    <section id="get-started" class="py-12 lg:py-44 px-4 text-center dark:bg-gray-800">
+      <div class="w-full max-w-5xl mx-auto lg:py-16 py-6">
+        <span class="uppercase md:text-2xl text-lg py-4 dark:text=green-200 max-w-2xl z-10 dark:text-green-200">Get Started</span>
+        <h1 class="md:text-6xl text-4xl mt-2 mb-6 font-extrabold dark:text-white font-gilroy font-heading">Start your path to digital independence today.</h1>
+    </div>
+    <div class="relative px-12 lg:px-24 rounded-lg mx-auto items-center text-center ">
+      <a href="https://markus129.typeform.com/to/TVjOcZgB" class="text-center shadow-xl-white hover:-translate-y-5 hover:scale-105 transition duration-300  hover:shadow-xl">
+        <h3 class="absolute lg:top-1/3 top-1/4 right-1/3 left-1/3 text-center lg:text-2xl text-lg font-gilroy text-gray-50 font-bold mx-auto hover:-translate-y-5 hover:scale-105 hover:text-green-300 transition duration-300  z-20">Take the Digital Reset</h3>
+        <img src="./img/assesment.jpg" alt="assesment preview" class=" mx-auto rounded-xl hover:-translate-y-1 hover:scale-105 z-10 ">      </a>
+    </div>
+    </section>
+
+    <!--Alliance for concious internet section-->
+    <section id="conscious-alliance" class="relative lg:py-32 lg:pb-56 pt-72 lg:pt-12 items-center bg-gray-100 dark:bg-gray-800">
+
+      <div class="container">
+        <div class=" px-8 md:pl-24 my-auto max-w-4xl 2xl:max-w-full">
+          <h4 class="uppercase md:text-2xl text-lg py-4 dark:text-green-200 z-10 ">The alliance for an conscious internet</h4>
+          <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white font-gilroy py-4 z-10 ">An internet force for good.</h2>
+          <p class="md:text-2xl text-xl py-4 max-w-6xl dark:text-gray-200 font-comfortaa z-10">This project is a collaboration of multiple organizations and individuals focused on building a more inclusive, responsible and sustainable Internet, leading a planetary movement to shape a conscious digital world that empowers everyone equally across borders.</p>
+        </div>
+        <div class="py-12 lg:px-16 px-8 "> 
+          
+          <div class="lg:flex flex-wrap items-center justify-items-center py-16 lg:py-4 lg:ml-4 max-w-5xl">
+            <img src="./img/global reset gradient.svg" alt="global reset" class="flex-1 lg:py-8 lg:1/5 w-1/2 py-24 mx-auto lg:mx-4">
+            <img src="./img/TFN_white.svg" alt="threefold logo" class="flex-1 lg:py-8 lg:w-1/4 w-1/2 py-24 mx-auto lg:mx-4">
+            <!-- <img src="./img/Joint Idea Logo_trans_white.svg" alt="joint idea logo" class="flex-1 lg:py-8 lg:w-1/4 w-1/2 py-24 mx-auto lg:mx-4"> -->
+            <img src="./img/conscious internet white.svg" alt="alliance logo" class=" flex-1 lg:py-8 lg:w-1/4 w-1/2 py-24 mx-auto lg:mx-4">
+          </div>
+        </div>
+      </div>
+      <img src="./img/dot-footer.svg" alt="dotted footer" class="absolute lg:-right-32 lg:w-3/4 lg:top-12 -top-12 -right-12">
+    </section>
+    <!-- Gradient Footer-->
+    <footer class="flex flex-wrap flex-col lg:flex-row items-center p-4 bg-gradient-to-r py-14 from-green-200 to-blue-500 dark:from-gray-800 dark:to-gray-500">
+      <div class="w-full lg:w-auto lg:mr-6 lg:ml-44 text-center text-white font-semibold text-xl font-gilroy">Take the Digital Sovereignty Assessment and Get Your CrystalTwin for Life!</div>
+      <div class="mx-auto my-4 lg:my-0 lg:ml-0">
+      </div>
+      <div>
+        <a href="#" class="crystal-btn-gradient font-bold mx-16">Get Started</a>
+      </div>
+    </footer>
+
+    <!--DarkMode JavaScript-->
+    <script>
+        document.getElementById('darkButton').addEventListener('click', function {
+          let htmlClasses = document.querySelector('html').classList;
+          if(localStorage.theme == 'dark') {
+            htmlClasses.remove('dark');
+            localStorage.removeItem('theme')
+          } else {
+            htmlClasses.add('dark');
+          }
+        })
+    </script>
+
+</body>
+</html>
