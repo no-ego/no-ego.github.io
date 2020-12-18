@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/svg" href="./img/dot-sacred.svg"/>
     <title>Veda retreats preview</title>
 
@@ -62,15 +63,23 @@
         </label>
         <input type="checkbox" class="hidden" id="menu-toggle" />
 
-        <div class="hidden lg:flex lg:items-center lg:mx-auto w-full" id="menu">
+        <div class="hidden lg:flex lg:items-center lg:mx-auto w-full z-40" id="menu">
           <nav>
             <ul class="lg:flex items-center  text-lg justify-between text-gray-50 pt-4 lg:pt-0">
               <li>
-                <a class="lg:p-8 py-3 px-0 block border-b-2 border-transparent dark:hover:border-green-200 hover:border-crystal-cyan text-gray-50 dark:text-gray-200 dark:hover:text-green-200 hover:text-crystal-cyan transition duration-300 " href="#">VISION</a>
-              </li>
+                <a class=" veda-menu-button" href="#vision">VISION</a>
               </li>
               <li>
-                <a class="inline-block py-1 px-14 mr-6 uppercase font-bold text-gray-50 hover:border-crystal-cyan ring-crystal-gray bg-transparent hover:shadow-lg dark:hover:shadow-lg-white hover:bg-crystal-cyan hover:text-white dark:text-gray-50 dark:hover:bg-green-200 dark:hover:text-gray-600 transition duration-300 text-xl rounded cursor-pointer" href="#get-started">Join Us!</a>
+                <a class=" veda-menu-button" href="#agenda">AGENDA</a>
+              </li>
+              <li>
+                <a class=" veda-menu-button" href="#logistics">LOGISTICS</a>
+              </li>
+              <li>
+                <a class=" veda-menu-button" href="#about">ABOUT</a>
+              </li>
+              <li>
+                <a class="inline-block py-1 px-14 mr-6 uppercase font-bold text-gray-50 hover:border-green-200 ring-crystal-gray bg-transparent hover:shadow-lg dark:hover:shadow-lg-white hover:bg-green-400 hover:text-white dark:text-gray-50 dark:hover:bg-green-200 dark:hover:text-gray-600 transition duration-300 text-xl rounded cursor-pointer" href="#get-started">Join Us!</a>
               </li>
             </ul>
             
@@ -78,51 +87,68 @@
         </div>
       </div>
       <a href="#">
-        <img src="./img/Veda logo + text.png" alt="Veda logo" width="300" class="dark:inline-block 2xl:w-1/3 absolute xl:-top-44 lg:-top-2 -top-24 left-0 right-0 mx-auto  ">
+        <img src="./img/Vedalogo with text.svg" alt="Veda logo" class="dark:inline-block xl:w-1/4 lg:w-1/5 w-52  absolute  xl:-top-12 lg:-top-2 -top-0 xl:left-0 xl:right-0 left-0 right-0 lg:left-1 lg:right-auto mx-auto z-10  ">
       </a>
 
     </header>
 
-    <!--Landing section-->
-    <section class="py-12 px-4 text-center mx-auto bg-gradient-to-r to-white from-green-400  lg:w-full bg-cover lg:min-h-screen bg-top lg:h-screen bg-no-repeat bg-fixed lg:pb-80 pb-36 z-30">
-      <img src="./img/landing boat.png" alt="landing boat" class="z-10 absolute top-0 left-0 lg:w-screen hidden lg:flex lg:object-cover object-fill" />
-      <img src="./img/Boat-mobile.png" alt="landing boat" class="z-10 absolute top-0 left-0 lg:w-screen lg:hidden flex lg:object-cover object-fill" />
 
-        <div class="w-full max-w-7xl mx-auto">
-          <img src="./img/landing text.png" alt="intro text" class="absolute lg:top-0 lg:left-0 lg:scale-100 scale-150 w-screen lg:flex hidden z-40 "> 
-          <img src="./img/mobile-text-up.png" alt="intro text" class="absolute lg:top-0 lg:left-0 lg:scale-100  lg:hidden w-screen z-40 ">
-          <div class="lg:h-screen h-screen"></div>
+    <!--main section one-->
+    <div class="bg-gradient-to-r to-green-100 from-green-400">
+      <!--Landing section-->
+      <section class="py-12 px-4 text-center mx-auto bg-gradient-to-r to-green-100 from-green-400  lg:w-full bg-cover lg:min-h-screen bg-top lg:h-screen bg-no-repeat bg-fixed lg:pb-80 xl:pb-96 pb-36 z-30">
+        <img src="./img/veda boat desktop with text.png" alt="landing boat" class="z-10 absolute top-0 left-0 lg:w-screen hidden lg:flex lg:object-cover object-fill" />
+        <img src="./img/veda boat mobile with text.png" alt="landing boat mobile" class="z-10 absolute top-0 left-0 lg:w-screen lg:hidden flex lg:object-cover object-fill" />
+          <div class="w-full max-w-7xl mx-auto">
+            <div class="lg:h-screen h-screen"></div>
+          </div>
+      </section>
+
+
+      <!--Welcome Section-->
+      <section id="challange" class="relative lg:py-32 lg:pb-24 items-center z-0 bg-gradient-to-r lg:pt-56 pt-0 to-green-100 from-green-400 dark:bg-gray-800">
+        <div class="container mx-auto">
+          <div class=" px-8  my-auto max-w-7xl">
+            <h4 class="uppercase md:text-2xl text-lg py-4 text-green-100 z-10 ">Welcome to veda retreats</h4>
+            <h2 class="md:text-6xl text-4xl text-white text-gray-50 font-veda font-semibold py-4 z-10 ">Welcome</h2>
+            <p class="md:text-2xl text-xl py-4 max-w-4xl text-gray-50 font-comfortaa z-10">Veda offers unique, authentic, and private cruises with organic food, green energy, and a warm-hearted crew.
+
+              There is no other experience like us on the Nile.</p>
+            <p class="md:text-2xl text-xl font-bold py-4 max-w-4xl text-gray-100 font-comfortaa z-10">WE are the creators, storytellers, influencers and builders that make up our online world. So why are we contributing to / participating in a system in which our digital selves aren't in our control? 
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-
-    <!--The Challenge Section-->
-    <section id="challange" class="relative lg:py-32 lg:pb-56 items-center z-0 bg-gradient-to-r lg:pt-56 pt-0 to-white from-green-400 dark:bg-gray-800">
-      <div class="container mx-auto">
-        <div class=" px-8  my-auto max-w-7xl">
-          <h4 class="uppercase md:text-2xl text-lg py-4 text-green-100 z-10 ">Welcome to veda retreats</h4>
-          <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white text-gray-50 font-gilroy py-4 z-10 ">The place where business meets spirituality</h2>
-          <p class="md:text-2xl text-xl py-4 max-w-4xl text-gray-50 font-comfortaa z-10">Veda offers unique, authentic, and private cruises with organic food, green energy, and a warm-hearted crew.
-
-            There is no other experience like us on the Nile.</p>
-          <p class="md:text-2xl text-xl font-bold py-4 max-w-4xl text-gray-100 font-comfortaa z-10">WE are the creators, storytellers, influencers and builders that make up our online world. So why are we contributing to / participating in a system in which our digital selves aren't in our control? 
+      <!--Business meets Consciousness Section -->
+      <section id="solution" class="relative px-8 md:px-16 py-12 md:py-48 md:pt-56 text-right">
+        <div class="w-full mx-auto relative lg:pb-56 pb-12 lg:pt-0 pt-72 md:pr-24">
+          <h2 class="font-semibold md:text-6xl text-4xl text-white z-10 py-4 font-veda">Business Meets Consciousness</h2>
+          <p class="md:text-3xl text-xl py-4 max-w-7xl text-right z-10 text-gray-50 font-comfortaa absolute md:right-24">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, excepturi sequi, voluptas repellendus ducimus culpa temporibus nobis dicta laudantium veritatis, dolore illo illum officiis itaque. Accusamus exercitationem rem hic debitis.
           </p>
         </div>
-      </div>
-    </section>
+        <img src="./img/diot-whoosh.svg" alt="dotted wooshes" class="absolute z-0 lg:-left-80 lg:-top-12 -left-24 -top-16 2xl:w-2/3 lg:w-1/2 ">
+      </section>
 
-    <!--The Solution Section -->
-    <section id="solution" class="relative px-8 md:px-16 py-12 md:py-48 md:pt-56 text-right dark:bg-gray-800">
-      <div class="w-full mx-auto relative lg:pb-56 pb-12 lg:pt-0 pt-72 md:pr-24">
-        <span class="uppercase md:text-2xl text-lg py-4 dark:text=green-200 max-w-2xl z-10 dark:text-green-200">The Solution</span>
-        <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white z-10 py-4 font-gilroy">A digital world with YOU at the center.</h2>
-        <p class="md:text-3xl text-xl py-4 max-w-7xl text-right z-10 dark:text-gray-50 font-comfortaa absolute md:right-24">CrystalTwin is a digital evolution, giving you a single source of authentication and identification across the internet while bringing together your data, files, content and applications in one unified, decentralized place. 
-        </p>
-      </div>
-      <img src="./img/diot-whoosh.svg" alt="dotted wooshes" class="absolute z-0 lg:-left-80 lg:-top-12 -left-24 -top-16 2xl:w-2/3 lg:w-1/2 ">
-    </section>
+      <!--Brain Meets Heart-->
+      <section id="challange" class="relative lg:py-32 lg:pb-24 items-center z-0 bg-gradient-to-r lg:pt-56 pt-0 to-green-100 from-green-400 dark:bg-gray-800">
+        <div class="container mx-auto">
+          <div class=" px-8  my-auto max-w-7xl">
+            <h2 class="md:text-6xl text-4xl text-white text-gray-50 font-veda font-semibold py-4 z-10 ">The Brain Meets The Heart</h2>
+            <p class="md:text-2xl text-xl py-4 max-w-4xl text-gray-50 font-comfortaa z-10">Veda offers unique, authentic, and private cruises with organic food, green energy, and a warm-hearted crew.
 
-    <!--Digital self section-->
+              There is no other experience like us on the Nile.</p>
+            <p class="md:text-2xl text-xl font-bold py-4 max-w-4xl text-gray-100 font-comfortaa z-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae rem veniam recusandae totam ab, facilis, adipisci ipsa quam quos molestias iusto. Mollitia natus explicabo quo dignissimos ex? Omnis, sed maiores?
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
+    <!--Brain Meets Heart section-->
     <section class="px-8 md:px-16 py-12 md:pt-56 text-center dark:bg-gray-800">
       <h3 class="font-extrabold md:text-5xl text-2xl dark:text-white py-6 font-gilroy">Your digital self is:</h3>
       <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:mx-16 items-center font-gilroy justify-items-center align-middle ">
