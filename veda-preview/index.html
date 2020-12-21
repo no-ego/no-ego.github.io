@@ -46,9 +46,12 @@
 <body class="overflow-x-hidden w-full">
     <!--Navigation bar-->
     <!--TODO: 
-      - Make animation out of one of the designs
-      - Adjust onboarding
-      - install purgecss for production-->
+      - Make photowall
+      - Select colors
+      - Make Logistics section
+      - Enable smooth scroll
+      - Make veda decorations
+    -->
 
     <header class="relative lg:px-15 px-6 bg-transparent flex flex-wrap items-center lg:py-0 py-2 z-20" >
       <div class="flex-1 flex flex-shrink-0 justify-between items-center mx-auto">
@@ -121,8 +124,8 @@
       </section>
 
       <!--Business meets Consciousness Section -->
-      <section id="solution" class="relative px-8 md:px-16 py-12 md:py-48 md:pt-56 text-right">
-        <div class="w-full mx-auto relative lg:pb-56 pb-12 lg:pt-0 pt-72 md:pr-24">
+      <section id="solution" class="relative px-8 md:px-16 py-24 md:py-48 md:pt-56 text-right">
+        <div id="vision" class="w-full mx-auto relative lg:pb-56 pb-12 lg:pt-0 pt-72 md:pr-24">
           <h2 class="font-semibold md:text-6xl text-4xl text-white z-10 py-4 font-veda">Business Meets Consciousness</h2>
           <p class="md:text-3xl text-xl py-4 max-w-7xl text-right z-10 text-gray-50 font-comfortaa absolute md:right-24">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, excepturi sequi, voluptas repellendus ducimus culpa temporibus nobis dicta laudantium veritatis, dolore illo illum officiis itaque. Accusamus exercitationem rem hic debitis.
@@ -137,7 +140,7 @@
           <div class=" px-8  my-auto max-w-7xl">
             <h2 class="md:text-6xl text-4xl text-white text-gray-50 font-veda font-semibold py-4 z-10 ">The Brain Meets The Heart</h2>
             <p class="md:text-2xl text-xl py-4 max-w-4xl text-gray-50 font-comfortaa z-10">Veda offers unique, authentic, and private cruises with organic food, green energy, and a warm-hearted crew.
-
+              
               There is no other experience like us on the Nile.</p>
             <p class="md:text-2xl text-xl font-bold py-4 max-w-4xl text-gray-100 font-comfortaa z-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae rem veniam recusandae totam ab, facilis, adipisci ipsa quam quos molestias iusto. Mollitia natus explicabo quo dignissimos ex? Omnis, sed maiores?
             </p>
@@ -149,18 +152,61 @@
 
 
     <!--Agenda section-->
-    <section class="px-8 md:px-16 py-12 md:pt-56 text-center bg-agenda bg-gradient-to-l to-blue-800 from-green-800">
-      <h3 class="font-semibold md:text-5xl text-2xl text-gray-50 py-6 font-veda">Agenda</h3>
+    <section class="relative px-8 md:px-16 py-12 md:pt-56 text-center bg-transparent bg-gradient-to-tl  from-green-500 to-green-300">
+      <div class="absulute top-0 left-0 right-0 mx-auto z-10">
+        <h1 class="relative font-semibold md:text-5xl text-4xl text-gray-50 font-veda lg:py-0 py-8 z-10 w-full" id="agenda">Agenda</h1>
+        <div class="relative grid lg:grid-cols-3 grid-cols-1 gap-8 z-10 pt-20">
+          <div class="container rounded-lg bg-white transition duration-300 transform ease-in-out hover:-translate-y-1 hover:scale-105 shadow-lg hover:shadow-xl">
+            <h3 class="text-2xl hover:underline font-comfortaa font-bold lg:px-8  py-6 mx-auto">Day 1</h3>
+            <div class="text-left pb-10">
+              <p class="px-6 mx-auto font-comfortaa py-2">6:00   |   Opening Yoga</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">8:00   |   Water Meditation</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">10:00   |   Rejuvenating Breakfast</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">12:00   |   Talk to Merge Business and Spirituality</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">14:00   |   Networking & Roleplaying</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">18:00   |   Feast</p>
+            </div>
 
-      <div class="py-8 mt-10 mx-auto">
-        <a class="crystal-btn-primary my-4 hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white" href="#">Learn More</a>
-        <a class="crystal-btn-gradient hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white text-gray-50 my-4 md:text-xl" href="#">Get Started</a>
+          </div>
+          <div class="container rounded-lg bg-white transition duration-300 transform ease-in-out hover:-translate-y-1 hover:scale-105 shadow-lg hover:shadow-xl">
+            <h3 class="text-2xl hover:underline font-comfortaa font-bold px-8 py-6 mx-auto">Day 2</h3>
+            <div class="text-left pb-10">
+              <p class="px-6 mx-auto font-comfortaa py-2">6:00   |   Opening Yoga</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">8:00   |   Water Meditation</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">10:00   |   Rejuvenating Breakfast</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">12:00   |   Talk to Merge Business and Spirituality</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">14:00   |   Networking & Roleplaying</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">18:00   |   Feast</p>
+            </div>
+          </div>
+          <div class="container rounded-lg bg-white transition duration-300 transform ease-in-out hover:-translate-y-1 hover:scale-105 shadow-lg hover:shadow-xl">
+            <h3 class="text-2xl hover:underline font-comfortaa font-bold px-8 py-6 mx-auto">Day 3</h3>
+            <div class="text-left pb-10">
+              <p class="px-6 mx-auto font-comfortaa py-2">6:00   |   Opening Yoga</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">8:00   |   Water Meditation</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">10:00   |   Rejuvenating Breakfast</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">12:00   |   Talk to Merge Business and Spirituality</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">14:00   |   Networking & Roleplaying</p>
+              <p class="px-6 mx-auto font-comfortaa py-2">18:00   |   Feast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!--TODO: Optimize these images for web--> 
+      <img src="./img/agenda eve desktop-01.png" alt="agenda evening" class="hidden lg:flex lg:object-cover absolute left-0 top-0 z-0">
+      <img src="./img/agenda sky mobile-02.png" alt="agenda sky" class="lg:hidden object-cover absolute w-full left-0 top-0 z-0 ">
+
+
+      <div class="py-8 mt-10 mx-auto z-10">
+        <a class="crystal-btn-primary my-4 hover:shadow-xl shadow-lg text-white dark:shadow-xl-white dark:hover:shadow-2xl-white" href="#">Learn More</a>
+        <a class="veda-gradient-button hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white text-gray-50 my-4 md:text-xl" href="#">Yes, I want to join</a>
     </div>
 
     <!--Logistics Section-->
     </section>
-    <section class="px-8 md:px-16 py-12 md:pt-56 text-center bg-gradient-to-tl to-blue-500 from-green-500">
-      <h3 class="font-extrabold md:text-5xl text-2xl text-gray-50 py-6 font-veda">The Logistics</h3>
+    <section class="px-8 md:px-16 py-12 md:pt-56 text-center bg-gradient-to-tl  from-green-500 to-green-300">
+      <h3 class="font-extrabold md:text-5xl text-2xl text-gray-50 py-6 font-veda" id="logistics">The Logistics</h3>
       <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:mx-16 items-center font-gilroy justify-items-center align-middle ">
          <div class="flex-1 w-1/2 items-center  mx-auto py-8 flex-shrink-0">
           <img src="./img/Ellipse 1.svg" alt="circle" class="w-20  mx-auto py-4 flex-shrink-0"> 
@@ -201,14 +247,14 @@
     </section>
 
     <!--Veda decoration-->
-    <section class="px-8 md:px-16 py-12 md:pt-56 text-center bg-gradient-to-l to-blue-800 from-green-800">
+    <section class="px-8 md:px-16 py-12 md:pt-56 text-center bg-gradient-to-l from-green-600 to-green-400">
       <h3 class="font-semibold md:text-5xl text-2xl text-gray-50 py-6 font-veda">Veda decoration 2 here</h3>
     </section>
     <!--Photowall-->
-    <section class="px-8 md:px-16 py-12 md:pt-56 text-center bg-gradient-to-b to-blue-800 from-green-800">
+    <section class="px-8 md:px-16 py-12 md:pt-56 text-center bg-gradient-to-b from-green-500 to-green-300">
       <h3 class="font-semibold md:text-5xl text-2xl text-gray-50 py-6 font-veda">Photowall here</h3>
       <div class="pt-8 px-4 mx-auto">
-        <div class="flex flex-wrap -mx-4 items-center mx-auto">
+        <div class="grid lg:grid-cols-5 grid-cols-2 -mx-4 items-center mx-auto">
           <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow transition duration-300 text-xl rounded-xl transform hover:-translate-y-1 hover:scale-105" src="./img/Ellipse 1.svg" alt=""></div>
           <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow transition duration-300 text-xl rounded-xl transform hover:-translate-y-1 hover:scale-105" src="./img/Ellipse 2.svg" alt=""></div>
           <div class="md:w-1/3 px-4 mb-8"><img class="rounded shadow transition duration-300 text-xl rounded-xl transform hover:-translate-y-1 hover:scale-105" src="./img/Ellipse 3.svg" alt=""></div>
@@ -220,13 +266,18 @@
     </section>
 
        <!--Meet Isabelle-->
-       <section id="conscious-alliance" class="relative lg:py-32 lg:pb-56 pt-72 lg:pt-12 items-center bg-gray-100 dark:bg-gray-800">
+       <section class="relative lg:py-32 lg:pb-56 pt-72 lg:pt-12 items-center bg-green-200 dark:bg-gray-800">
 
         <div class="container">
           <div class=" px-8 md:pl-24 my-auto max-w-4xl 2xl:max-w-full">
             <h4 class="uppercase md:text-2xl text-lg py-4 dark:text-green-200 z-10 ">MEET YOUR HOST</h4>
-            <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white font-gilroy py-4 z-10 ">Hello I am Isabelle,</h2>
-            <p class="md:text-2xl text-xl py-4 max-w-6xl dark:text-gray-200 font-comfortaa z-10">This project is a collaboration of multiple organizations and individuals focused on building a more inclusive, responsible and sustainable Internet, leading a planetary movement to shape a conscious digital world that empowers everyone equally across borders.</p>
+            <h2 class="font-semibold md:text-6xl text-4xl dark:text-white font-veda py-4 z-10" id=about>Hello I am Isabelle,</h2>
+            <p class="md:text-2xl text-xl py-4 max-w-6xl dark:text-gray-200 font-comfortaa z-10">Isabelle holds a law degree and MBA. Two years after setting up her legal solutions firm, a progressed form of Lyme disease called her to a halt.
+              <br>
+
+              Years of conventional medicine made her completely bedridden. True healing only started after introducing organic healing food, biological medicine protocols, energy healing, meditation, and understanding the Self.
+              <br>
+              Helping to grow people in awareness and understanding their own power became a true passion of Isabelle.</p>
           </div>
           <div class="py-12 lg:px-16 px-8 "> 
             
@@ -249,67 +300,6 @@
           <a href="#" class="crystal-btn-gradient font-bold mx-16">Get Started</a>
         </div>
       </footer>
-    <!--powered by section-->
-    <section class="md:py-16 py-4 md:pt-40 md:pl-40 md:px-16 dark:bg-gray-800"> 
-      <div class="md:flex md:flex-wrap container">
-        <div class=" px-8 md:pl-24 my-auto max-w-4xl 2xl:max-w-full">
-          <h4 class="uppercase md:text-2xl text-lg py-4 dark:text-green-200 z-10 ">Powered By</h4>
-          <h2 class="font-extrabold md:text-6xl text-4xl dark:text-white font-gilroy py-4 z-10 ">The Threefold Network</h2>
-          <p class="md:text-2xl text-xl py-4 max-w-4xl text-gray-500 dark:text-gray-200 font-comfortaa z-10">The Internet is a product of the people, not the other way around. Protocol.me gives each person the ability to customize the way apps, programs, companies and individuals interact with their data, content and other information, empowering them to take control of their identity and security online and preventing unauthorized use or access from unknown entities.
-          </p>
-        </div>
-        <div class="md:order-1 flex-1"><img src="./img/swirl.png" alt="Threefold swirl" class="md:ml-20 mx-auto md:px-0 px-8 w-full"></div>
-      </div>
-       <a class="crystal-btn-primary my-4 hover:shadow-xl shadow-lg dark:shadow-xl-white dark:hover:shadow-2xl-white md:text-xl md:ml-24 ml-8" href="https://www.threefold.io/">Learn More</a>
-    </section>
-    <!--Get started section-->
-    <!--TODO: make embedded iframe of this-->
-    <section id="get-started" class="py-12 lg:py-44 px-4 text-center dark:bg-gray-800">
-      <div class="w-full max-w-5xl mx-auto lg:py-16 py-6">
-        <span class="uppercase md:text-2xl text-lg py-4 dark:text=green-200 max-w-2xl z-10 dark:text-green-200">Get Started</span>
-        <h1 class="md:text-6xl text-4xl mt-2 mb-6 font-extrabold dark:text-white font-gilroy font-heading">Start your path to digital independence today.</h1>
-    </div>
-    <div class="relative px-12 lg:px-24 rounded-lg mx-auto items-center text-center ">
-      <a href="https://markus129.typeform.com/to/TVjOcZgB" class="text-center shadow-xl-white hover:-translate-y-5 hover:scale-105 transition duration-300  hover:shadow-xl">
-        <h3 class="absolute lg:top-1/3 top-1/4 right-1/3 left-1/3 text-center lg:text-2xl text-lg font-gilroy text-gray-50 font-bold mx-auto hover:-translate-y-5 hover:scale-105 hover:text-green-300 transition duration-300  z-20">Take the Digital Reset</h3>
-        <img src="./img/assesment.jpg" alt="assesment preview" class=" mx-auto rounded-xl hover:-translate-y-1 hover:scale-105 z-10 ">      </a>
-    </div>
-    </section>
-    <!--Staircase of information-->
-    <section id="staircase" class="bg-white dark:bg-gray-800 py-12 px-4">
-      <div>
-        <div class="flex flex-wrap items-center my-4 -mx-8 bg-gray-100 dark:bg-gray-900">
-          <div class="md:w-1/2 px-8 mb-8 md:flex-1 md:order-1 w-full "><img class="w-4/5 mx-auto" src="./img/dot-swirl-rev.svg" alt="dot swirl"></div>
-          <div class="md:w-1/2 px-8 md:flex-1 max-w-2xl md:ml-24 py-12 mx-auto md:text-right">
-            <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">Self-Sovereign Identity (SSI) and Universal Authentication</h3>
-            <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">No more filling out countless account profiles and managing dozens of passwords. CrystalTwin is your secure single sign-on for the Internet. </p>
-          </div>
-        </div>
-        <div class="flex flex-wrap items-center my-4 -mx-8  dark:bg-gray-800">
-          <div class="md:w-1/2 px-8 mb-8 w-full"><img class="w-4/5 mx-auto" src="./img/dot-circle.svg" alt="dot purple sun"></div>
-          <div class="md:w-1/2 px-8 max-w-2xl mb-8">
-            <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">Securely Own, Store and Manage Your Content, Files, Data and Documents</h3>
-            <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">Stop storing your stuff in places that others control. CrystalTwin comes with decentralized storage so that you never have to use (or pay for) centralized servers again.</p>
-          </div>
-        </div>
-        <div class="flex flex-wrap items-center my-4 -mx-8 bg-gray-100 dark:bg-gray-700">
-          <div class="md:w-1/2 px-8 mb-8 md:flex-1 md:order-1 w-full"><img class="w-4/5 mx-auto" src="./img/dot-wave.svg" alt="dot wave"></div>
-          <div class="md:w-1/2 px-8 max-w-2xl md:flex-1 md:ml-24 md:text-right py-12">
-            <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">Open Source Tools and Experiences Built to Enhance, not Exploit</h3>
-            <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">Apps in the CrystalTwin ecosystem are created with the individual in mind — not some advertiser or corporation — which means less third-party control and oversight, more peer-to-peer interaction, and data that stays yours.</p>
-          </div>
-        </div>
-        <div class="flex flex-wrap items-center my-4 -mx-8  dark:bg-gray-800">
-          <div class="md:w-1/2  px-8 mb-8 order-none lg:relative w-full"><img class="w-4/5 mx-auto lg:absolute lg:-left-24 lg:-top-12 lg:w-full" src="./img/dot-wave-blue.svg" alt="dot wave"></div>
-          <div class="md:w-1/2  max-w-2xl px-8 py-12 ">
-            <h3 class="lg:text-4xl text-xl mb-3 font-bold max-w-2xl dark:text-gray-100 font-heading font-gilroy">A Dashboard to Illuminate Your Digital Life</h3>
-            <p class="text-gray-400 dark:text-gray-200 lg:text-xl leading-relaxed font-comfortaa">See your data, network, preferences and content at a glance. Your CrystalTwin monitors and displays your digital activity and information in real-time, giving you key insights and recommendations for an optimized online experience.</p>
-          </div>
-        </div>
-      </div>
-    
-
-  </section>
 
  
 
